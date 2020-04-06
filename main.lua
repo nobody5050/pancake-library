@@ -26,4 +26,3 @@ end
 function love.mousepressed(x,y,button)
 	pancake.mousepressed(x,y,button) -- Passing your presses to pancake!
 end
- 
