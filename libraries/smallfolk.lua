@@ -139,7 +139,7 @@ local expect_object_head = {
 	I = function(string, i) return 1/0, i end,
 	i = function(string, i) return -1/0, i end,
 	['"'] = function(string, i)
-		local nexti = i - 1
+		local nexti = i - 1 
 		repeat
 			nexti = string:find('"', nexti + 1, true) + 1
 		until string:sub(nexti, nexti) ~= '"'
